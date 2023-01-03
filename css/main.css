@@ -1,4 +1,11 @@
 /* GLOBAL */
+:root {
+  --global-color:#ea625c;
+  --bg-color:#fff;
+  --color:#222;
+  --font-family-text:"Roboto", "Arial", sans-serif;
+}
+
 html {
   height: 100%;
   box-sizing:border-box;
@@ -19,7 +26,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family:"Arial" sans-serif;
+  font-family:var(--font-family-text);
   background-color: #fff;
   color: #222;
 }
@@ -33,11 +40,13 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-  min-width: 1200px;
+  min-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+  color:var(--color);
+  background-color:var(--bg-color);
 }
 
 
