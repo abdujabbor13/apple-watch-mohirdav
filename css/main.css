@@ -49,7 +49,24 @@ img {
   margin-right: auto;
 }
 
+/* BUTTON  */
+.button {
+  display: inline-block;
+  padding: 12px 38px;
+  text-decoration: none;
+  border:none;
+  color: #fff;
+  background-color: var(--global-color);
+  transition: opacity 0.3s ease;
+}
 
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
 
 /* MAIN CONTENT  */
 .main-content {
@@ -125,3 +142,57 @@ img {
 }
 
 /* HERO SECTION  */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 182px;
+  border-bottom: 1px solid var(--color-y);
+  background-image: url(../img/watch.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 400px) bottom;
+}
+
+.block-cta {
+  width: 100%;
+  max-width: 490px;
+}
+.hero-heading {
+  font-family:var(--font-family-text);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero-paragraph {
+  width: 100%;
+  max-width: 450px;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  font-family:var(--font-family-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color:var(--color-y);
+}
+
+
+
+
+
+/* BACKGROUND RETINA  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url(../img/watch@2x.jpg);
+  }
+
+}
