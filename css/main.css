@@ -51,6 +51,8 @@ img {
 
 /* BUTTON  */
 .button {
+  min-width: 260px;
+  text-align: center;
   display: inline-block;
   padding: 12px 38px;
   text-decoration: none;
@@ -181,6 +183,17 @@ img {
   width: 100%;
   max-width: 490px;
 }
+
+.block-cta .runners-heading {
+  color: var( --bg-color);
+}
+
+.block-cta .runners-text {
+  color:var(--bg-color);
+  border-color: var(--bg-color);
+
+}
+
 .hero-heading {
   font-family:var(--font-family-text);
   font-weight: 700;
@@ -252,10 +265,31 @@ img {
   box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
 
+/* PROMO  */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+/* RUNNERS  */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
 
-
+.runners-cta {
+  margin-left: auto;
+}
 
 /* BACKGROUND RETINA  */
 @media
@@ -268,6 +302,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero {
     background-image: url(../img/watch@2x.jpg);
+  }
+
+  .runners {
+    background-image: url(../img/runners@2x.jpg);
   }
 
 }
